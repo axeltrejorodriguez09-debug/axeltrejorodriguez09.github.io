@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Solar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="navbar">
+    <div class="logo-box">
+      <span class="logo">LOGO</span>
+      <span class="title">SISTEMA SOLAR</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#inicio">Inicio</a> |
+      <a href="#planetas">Planetas</a> |
+      <a href="#datos">Datos</a> |
+      <a href="#info-adicional">Info Adicional</a> |
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Botones Flotantes de Desplazamiento -->
+  <div class="scroll-buttons">
+    <button onclick="scrollPage(-1)">▲</button>
+    <button onclick="scrollPage(1)">▼</button>
+  </div>
+
+  <!-- PÁGINA 1: INICIO -->
+  <section id="inicio" class="page">
+    <h1>Explora el Sistema Solar</h1>
+    
+    <div class="grid-2">
+      <div class="card">
+        <h3>Diagrama del Sistema Solar</h3>
+        <div class="diagram">
+          <div class="sun">SOL</div>
+          <div class="orbit o1"><span class="p p1">P1</span></div>
+          <div class="orbit o2"><span class="p p2">P2</span><span class="p p2-sub">P2'</span></div>
+          <div class="orbit o3"><span class="p p3">P3</span></div>
+          <div class="orbit o4"><span class="p p4">P4</span><span class="p p5">P5</span></div>
+          <div class="orbit o5"><span class="p p6">P6</span><span class="p p7">P7</span><span class="p p8">P8</span></div>
+        </div>
+      </div>
+
+      <div class="card intro">
+        <h2>Introducción</h2>
+        <p>El Sistema Solar está formado por el Sol, 8 planetas, lunas, asteroides y cometas.</p>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="#datos" class="btn">Sección del Sol</a>
+      <a href="#planetas" class="btn">Sección Planeta</a>
+      <a href="#datos" class="btn">Sección Luna</a>
+      <a href="#info-adicional" class="btn">Sección Curiosidades</a>
+    </div>
+
+    <div class="alert">
+      <span class="info-icon">i</span>
+      <p><strong>Dato rápido:</strong> El Sol tiene el 99% de la masa del sistema.</p>
+    </div>
+
+    <footer class="footer">Página 1 — Inicio</footer>
+  </section>
+
+  <!-- PÁGINA 2: LOS PLANETAS -->
+  <section id="planetas" class="page">
+    <h1>Los Planetas</h1>
+
+    <div class="card">
+      <h3>Sección 1 — Lista de Planetas con información:</h3>
+      <ul class="planet-list">
+        <li><strong>• Mercurio</strong> — planeta más pequeño y cercano al Sol</li>
+        <li><strong>• Venus</strong> — el más caliente por su atmósfera</li>
+        <li><strong>• Tierra</strong> — único con vida y agua líquida</li>
+        <li><strong>• Marte</strong> — planeta rojo con el volcán más grande</li>
+        <li><strong>• Júpiter</strong> — el más grande con Gran Mancha Roja</li>
+        <li><strong>• Saturno</strong> — famoso por sus anillos</li>
+        <li><strong>• Urano</strong> — gira de lado</li>
+        <li><strong>• Neptuno</strong> — el más lejano con vientos fuertes</li>
+      </ul>
+    </div>
+
+    <h3>Sección 2 — Video Relacionado</h3>
+    <div class="grid-2">
+      <div class="card media-card">
+        <div class="media-placeholder video">▶</div>
+        <p>Video 1 - Características de los planetas</p>
+      </div>
+      <div class="card media-card">
+        <div class="media-placeholder video">▶</div>
+        <p>Video 2 - Exploración del Sistema Solar</p>
+      </div>
+    </div>
+
+    <h3>Imágenes</h3>
+    <div class="grid-2">
+      <div class="card media-card">
+        <div class="media-placeholder image">🖼</div>
+        <p>Imagen 1 — Vista del Sistema Solar</p>
+      </div>
+      <div class="card media-card">
+        <div class="media-placeholder image">🖼</div>
+        <p>Imagen 2 — Órbitas Planetarias</p>
+      </div>
+    </div>
+
+    <footer class="footer">© 2024 SISTEMA SOLAR • Todos los derechos reservados • Contacto | Privacidad</footer>
+  </section>
+
+  <!-- PÁGINA 3: DATOS -->
+  <section id="datos" class="page">
+    <h1>Datos del Sistema Solar</h1>
+    <p class="subtitle">Versión 2 — Resumen de datos y comparativas del sistema solar</p>
+
+    <div class="grid-2">
+      <div class="card dashed">
+        <div class="icon">📷</div>
+        <h4>Imagen: Sol</h4>
+        <small>(Sol — estrella del sistema solar)</small>
+      </div>
+      <div class="card dashed">
+        <div class="icon">📷</div>
+        <h4>Imagen: Planetas</h4>
+        <small>(Planetas — vista general del sistema solar)</small>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="section-title">Sección: Datos Importantes</div>
+        <ul class="clean-list">
+          <li>- Distancia al Sol: ________ UA</li>
+          <li>- Número de planetas: 8</li>
+          <li>- Asteroides y cometas: numerosos</li>
+          <li>- Edad del sistema solar: ~4.6 mil millones años</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-title">Sección: Comparación</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Tierra</th>
+              <th>Júpiter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diámetro (km)</td>
+              <td>12,742</td>
+              <td>139,820</td>
+            </tr>
+            <tr>
+              <td>Lunas</td>
+              <td>1</td>
+              <td>95+</td>
+            </tr>
+            <tr>
+              <td>Tipo</td>
+              <td>Terrestre</td>
+              <td>Gaseoso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="section-title">Sección: Dato Curioso Venus</div>
+        <ul class="clean-list">
+          <li>- Venus es el planeta más caliente del sistema solar.</li>
+          <li>- Gira en sentido opuesto a la mayoría de planetas.</li>
+          <li>- A veces llamado "el planeta gemelo de la Tierra" por su tamaño similar.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">© 2024 SISTEMA SOLAR — Wireframe v2 | Contacto: info@sistemasolar.ejemplo.com</footer>
+  </section>
+
+  <!-- PÁGINA 4: INFO ADICIONAL -->
+  <section id="info-adicional" class="page">
+    <h1>Info Adicional - Curiosidades</h1>
+
+    <h3>Sección 1 — Imágenes</h3>
+    <div class="grid-2">
+      <div class="card dashed">
+        <div class="icon">☀️</div>
+        <h4>Imagen Sol</h4>
+        <small>(vista del sol)</small>
+      </div>
+      <div class="card dashed">
+        <div class="icon">🪐</div>
+        <h4>Imagen Planetas</h4>
+        <small>(sistema de planetas)</small>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card curiosity">
+        <span class="info-icon">i</span>
+        <h4>1. Curiosidad</h4>
+        <p>Júpiter tiene más de 90 lunas</p>
+      </div>
+      <div class="card curiosity">
+        <span class="info-icon">i</span>
+        <h4>2. Curiosidad</h4>
+        <p>Un día en Venus es más largo que su año</p>
+      </div>
+      <div class="card curiosity">
+        <span class="info-icon">i</span>
+        <h4>3. Curiosidad</h4>
+        <p>Saturno podría flotar en agua por su baja densidad</p>
+      </div>
+    </div>
+
+    <h3>Sección 2 — Preguntas con Respuestas</h3>
+    <div class="card">
+      <div class="faq">
+        <span class="q-icon">?</span>
+        <div>
+          <p><strong>¿Cuál es el planeta más grande?</strong></p>
+          <p>→ Respuesta: Júpiter</p>
+        </div>
+      </div>
+      <div class="faq">
+        <span class="q-icon">?</span>
+        <div>
+          <p><strong>¿Por qué Plutón ya no es planeta?</strong></p>
+          <p>→ Respuesta: Es planeta enano</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Sección 3 — Dato Extra</h3>
+    <div class="grid-2">
+      <div class="card dashed">
+        <div class="icon">⭐</div>
+        <h4>Imagen</h4>
+        <small>(ilustración / dato extra visual)</small>
+      </div>
+      <div class="card">
+        <h4>Dato Extra:</h4>
+        <p>El Sistema Solar se formó hace unos 4.600 millones de años a partir de una nube de gas y polvo.</p>
+        <small>*Este dato se utiliza para contexto educativo y curiosidades.</small>
+      </div>
+    </div>
+
+    <footer class="footer">© 2024 SISTEMA SOLAR • Página de Info Adicional • Wireframe v1.0</footer>
+  </section>
+
+  <!-- PÁGINA 5: CONTACTO -->
+  <section id="contacto" class="page">
+    <h1>Contacto</h1>
+
+    <div class="grid-2">
+      <div class="card">
+        <h2>Formulario de Contacto</h2>
+        <form onsubmit="alert('Mensaje enviado'); return false;">
+          <label>Nombre</label>
+          <input type="text" required>
+
+          <label>Email</label>
+          <input type="email" required>
+
+          <label>Tu Pregunta</label>
+          <input type="text" required>
+
+          <label>Mensaje</label>
+          <textarea rows="3" required></textarea>
+
+          <button type="submit" class="submit-btn">ENVIAR</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Contacto</h2>
+        <p>✉ contacto@sistemasolar.com</p>
+        <hr>
+        <div class="mini-box">☀️ Imagen Sol</div>
+        <div class="mini-box">🪐 Imagen Planetas</div>
+      </div>
+    </div>
+
+    <footer class="footer">© 2024 SISTEMA SOLAR</footer>
+  </section>
+
+  <script>
+    const pages = ['inicio', 'planetas', 'datos', 'info-adicional', 'contacto'];
+    function scrollPage(dir) {
+      let current = 0;
+      const pos = window.scrollY + 200;
+      pages.forEach((p, i) => {
+        const el = document.getElementById(p);
+        if (el && el.offsetTop <= pos) current = i;
+      });
+      let next = current + dir;
+      if (next < 0) next = 0;
+      if (next >= pages.length) next = pages.length - 1;
+      document.getElementById(pages[next]).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
